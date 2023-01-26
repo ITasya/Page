@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+  
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Main Page</title>
+</head>
+<body class="body-web">
+<div class="wrapper-result">
+  
+    <header class="headerMain header-apartment">
+        <div class="nav-close"></div>
+    <div class="headerWeb__container">
+        <div class="headerMain__body body-headerMain">
+          
+        <nav class="body-headerMain__nav">
+           
+            <button class="body-headerMain__btn-clode btn-close _icon-close" id="close-nav-menu"></button>
+            <div class="body-headerMain__logo _icon-logo"></div>
+                <ul class="body-headerMain__list">
+                    <li class="body-headerMain__item">
+                        <a href="" class="body-headerMain__link">Ипотека</a>
+                    </li>
+                    <li class="body-headerMain__item">
+                        <a href="" class="body-headerMain__link">Риэлторы</a>
+                    </li>
+                    <li class="body-headerMain__item">
+                        <a href="" class="body-headerMain__link">Новостройки</a>
+                    </li>
+                    <li class="body-headerMain__item">
+                        <a href="" class="body-headerMain__link">Застройщикам</a>
+                    </li>
+                    <li class="body-headerMain__item">
+                        <a href="" class="body-headerMain__link">Сервисы</a>
+                    </li>
+                </ul>
+                <div class="body-headerMain__block block-headerMain">
+                    <a href="" class="block-headerMain__text _icon-profile">Личный кабинет</a>
+                    <a href="" class="block-headerMain__text _icon-plus">Добавить объявление</a>
+                </div>
+    
+            </nav>
+            <button class="nav-toggleMain" id="nav_toggleMain">
+                <span class="nav-toggleMain__item"></span>
+            </button>
+            </div>
+        </div>
+    </header>
+    <main class="main-result">
+
+     <section class="apartment">
+       
+        <div class="apartment__container">
+
+            <div class="apartment__back-btn back">
+            <a href="#" class="back-btn _icon-arrow1"></a>
+            <h1 class="web__chapter chapter">Продать</h1>
+            </div>
+
+            <div class="apartment__body">
+                <div class="apartment__items-tabs accordion-apartment">
+                    <div class="accordion-apartment__item">
+                        <div class="accordion-apartment__title _icon-arrow1">Квартира</div>
+                        <ul class="accordion-apartment__list">
+                            <li class="accordion-apartment__link active tabs-link" data-sell-path="flat">Квартира</li>
+                            <li class="accordion-apartment__link tabs-link" data-sell-path="home">Дом</li>
+                            <li class="accordion-apartment__link tabs-link" data-sell-path="room">Комната</li>
+                            
+                        </ul>
+                    </div>
+                   
+                </div>
+                <ul class="apartment__list">
+                    <li class="apartment__item-tabs active"  data-sell-path="flat">
+                      Квартира
+                    </li>
+                    <li class="apartment__item-tabs" data-sell-path="home">
+                       Дом
+                    </li>
+                    <li class="apartment__item-tabs" data-sell-path="room">
+                      Комната
+                    </li>
+                </ul>
+                <div class="apartment__tabs-content flat-content active"  data-sell-target="flat">
+                <div class="apartment__items">
+                    <div class="apartment__item item-apartment-location">
+                        <h2 class="item-apartment-location__title title-apartment">Расположение</h2> 
+                        <div class="item-apartment-location__search">
+                            <button type="button" class="item-apartment-location__btn-search _icon-search"></button>
+                            <input type="text" class="item-apartment-location__input-search" placeholder="Адрес">
+
+                        </div>
+                      
+                    </div>
+                    <div class="apartment__item item-apartment-aboutTheObject">
+                        <h2 class="item-apartment-aboutTheObject__title title-apartment">Об объекте</h2> 
+                        <div class="item-apartment-aboutTheObject__switcher switcher">
+                            <div class="switcher__body">
+                                <ul class="switcher__list">
+                                    <li class="switcher__item switcher-buy--flat active">
+                                        <input checked type="radio" class="switcher__input" id="flat" name="flatApartment" value="flat">
+                                        <label for="flat" class="switcher__title">Квартира</label>
+                                      
+                                    </li>
+                                    <li class="switcher__item switcher-buy--flat ">
+                                        <input type="radio" class="switcher__input" id="apartment" name="flatApartment" value="apartment">
+                                        <label for="apartment" class="switcher__title">Апартаменты</label>
+                                       
+                                    </li>  
+                                </ul>
+                            </div>
+                        </div>
+                      <div class="item-apartment-aboutTheObject__body">
+                        <input type="text" id="cadastral_number" placeholder="__:__:_______:__"  class="item-apartment-aboutTheObject__input">
+                        <div id="done-cadastral-flat" class="check-done _icon-check"></div>
+                      </div>
+                      <div class="item-apartment-aboutTheObject__bottom">
+                        <h3 class="item-apartment-aboutTheObject__subtitle">Количество комнат</h3>
+                        <div class="item-apartment-aboutTheObject__block block-content">
+                            <ul class="block-content__list">
+                                <li class="block-content__item block-content__item-one ">
+                                    <input checked type="checkbox" class="block-content__input" id="buystudio"name="studio">
+                                    <label for="buystudio" class="block-content__link block-content__link--one">Студия</label>
+                                </li>
+                                <li class="block-content__item active">
+                                    <input checked type="checkbox" class="block-content__input" id="buyone" value="one" name="one">
+                                    <label for="buyone" class="block-content__link">1</label>
+                                </li>
+                                <li class="block-content__item">
+                                    <input type="checkbox" class="block-content__input" id="buytwo" value="two" name="two">
+                                    <label for="buytwo" class="block-content__link">2</label>
+                                </li>
+                                <li class="block-content__item">
+                                    <input type="checkbox" class="block-content__input" id="buythree" value="three" name="three">
+                                    <label for="buythree" class="block-content__link">3</label>
+                                </li>
+                                <li class="block-content__item active">
+                                    <input checked type="checkbox" class="block-content__input" id="buyfour" value="four" name="four">
+                                    <label for="buyfour" class="block-content__link">4+</label>
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="apartment__item item-apartment-area">
+                        <h2 class="item-apartment-area__title title-apartment">Площадь</h2> 
+                        <div class="area__items">
+                            <div class="area__item item-filter">
+                                <h3 class="item-filter__title">Общая</h3>
+                                <div class="item-filter__inputs">
+
+                                    <div class="item-filter__body">
+                                        <input type="number" class="item-filter__input">
+                                        <label for="" class="item-filter__label">От</label>
+                                    </div>
+                                    <div class="item-filter__body">
+                                        <input type="number" class="item-filter__input">
+                                        <label for="" class="item-filter__label">До</label>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="area__item item-filter">
+                                <h3 class="item-filter__title">Кухня</h3>
+                                <div class="item-filter__inputs">
+                                    
+                                    <div class="item-filter__body">
+                                        <input type="number" class="item-filter__input">
+                                        <label for="" class="item-filter__label">От</label>
+                                    </div>
+                                    <div class="item-filter__body">
+                                        <input type="number" class="item-filter__input">
+                                        <label for="" class="item-filter__label">До</label>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="area__item item-filter">
+                                <h3 class="item-filter__title">Жилая</h3>
+                                <div class="item-filter__inputs">
+                                    
+                                    <div class="item-filter__body">
+                                        <input type="number" class="item-filter__input">
+                                        <label for="" class="item-filter__label">От</label>
+                                    </div>
+                                    <div class="item-filter__body">
+                                        <input type="number" class="item-filter__input">
+                                        <label for="" class="item-filter__label">До</label>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apartment__item item-apartment-other">
+                        <h2 class="item-apartment-other__title title-apartment">Прочее</h2> 
+                        <div class="item-apartment-other__content">
+                            <div class="other__body">
+                                <div class="item-apartment-other__items accordion-apartment">
+                                    <div class="accordion-apartment__item">
+                                        <select class="select-styled" placeholder="Ремонт">
+                                            <option value="">Ремонт</option>
+                                            <option>Косметический</option>
+                                            <option>Капитальный</option>
+                                            <option>Восстановительный</option>
+                                        </select>
+                                       
+                                    </div>
+                                </div>
+                                <div class="other-parameters__content">
+                                    <div class="other-parameters__body">
+                                        <div class="other-parameters__balcony-loggia balcony-loggia">
+                                            <h3 class="balcony-loggia__title subtitle-parameters">Балкон/ Лоджия</h3>
+                                            <ul class="balcony-loggia__list" id="balcony-buy">
+                                                <li class="balcony-loggia__item item-checkbox checked">
+                                                    <input type="checkbox" class="item-checkbox__checkbox" id="balcony-flat_check1" name="balcony" checked>
+                                                    <label for="balcony-flat_check1" class="item-checkbox__label">Балкон</label>
+                                                </li>
+                                                <li  class="balcony-loggia__item item-checkbox">
+                                                   
+                                                    <input type="checkbox" class="item-checkbox__checkbox" id="balcony-flat_check2" name="loggia">
+                                                    <label for="balcony-flat_check2" class="item-checkbox__label">Лоджия</label>
+                                                </li>
+                                                <li class="balcony-loggia__item item-checkbox  item-checkbox-no">
+                                                    <input type="checkbox" class="item-checkbox__checkbox item-checkbox__checkbox-no" id="balcony-home_check3" name="no">
+                                                    <label for="balcony-home_check3" class="item-checkbox__label">Нет</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                <div class="other-parameters__bathroom bathroom">
+                                    <h3 class="bathroom__title subtitle-parameters">Санузел</h3>
+                                    <div class="bathroom__body body-choice">
+                                       
+                                        <ul class="body-choice__list">
+                                            <li class="body-choice__item  bathroom-choicetakeOff--room">
+                                                <input checked type="radio" class="body-choice__input" id="flatCombined" name="flatBathroom" value="combined">
+                                                <label for="flatCombined" class="body-choice__label">Совмещенный</label>
+                                                
+                                            </li>
+                                            <li class="body-choice__item  bathroom-choicetakeOff--room active">
+                                                <input type="radio" class="body-choice__input" id="flatSeparate" name="flatBathroom" value="separate">
+                                                <label for="flatSeparate" class="body-choice__label">Раздельный</label>
+                                              
+                                            </li>
+                                            <li class="body-choice__item bathroom-choicetakeOff--room">
+                                                <input type="radio" class="body-choice__input" id="flatSeveral" name="flatBathroom" value="several">
+                                                <label for="flatSeveral" class="body-choice__label">Несколько</label>
+                                                
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="other-parameters__windows windows">
+                                    <h3 class="windows__title subtitle-parameters">Окна</h3>
+                                    <div class="windows__body body-choice">
+                                       
+                                        <ul class="body-choice__list">
+                                            <li class="body-choice__item bathroom-choiceBuy--home">Дерево</li>
+                                            <li class="body-choice__item bathroom-choiceBuy--home active">Пластик</li>
+                                            <li class="body-choice__item bathroom-choiceBuy--home">И то, и то</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="apartment__item item-apartment-building">
+                        <h2 class="item-apartment-building__title title-apartment">О здании</h2> 
+                        <div class="item-apartment-building__content">
+                            <div class="item-apartment-building__items accordion-apartment">
+                                <div class="accordion-apartment__item">
+                                    <select class="select-styled" placeholder="Тип дома">
+                                        <option value="">Тип дома</option>
+                                        <option>Монолитный</option>
+                                        <option>Монолитно-кирпичные дома</option>
+                                        <option>Кирпичный</option>
+                                        <option>Панельный</option>
+                                    </select>
+                                </div>
+                                <div class="accordion-apartment__item">
+                                    <select class="select-styled" placeholder="Тип дома">
+                                        <option value="">Тип дома</option>
+                                        <option>Монолитный</option>
+                                        <option>Монолитно-кирпичные дома</option>
+                                        <option>Кирпичный</option>
+                                        <option>Панельный</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="item-apartment-building__height height">
+                                <h2 class="height__title title-parameters">Высота потолков</h2>
+                                <div class="height__swiper">
+                                    <ul class="height__list">
+                                        
+                                        <li class="height__item item-checkbox checked">
+                                            <input type="checkbox" class="item-checkbox__checkbox" id="home-flat-height-check1" name="height_2,5" checked>
+                                            <label for="home-flat-height-check1" class="item-checkbox__label">2,5 м</label>
+                                        </li>
+                                        <li class="height__item item-checkbox checked">
+                                           
+                                            <input type="checkbox" class="item-checkbox__checkbox" id="home-flat-height-check2" name="height_2,7" checked>
+                                            <label for="home-flat-height-check2" class="item-checkbox__label">2,7 м</label>
+                                        </li>
+                                        <li class="height__item item-checkbox  checked">
+                                           
+                                            <input type="checkbox" class="item-checkbox__checkbox" id="home-flat-height-check3" name="height_3" checked>
+                                            <label for="home-flat-height-check3" class="item-checkbox__label">3 м</label>
+                                        </li>
+                                        <li class="height__item item-checkbox ">
+                                           
+                                            <input type="checkbox" class="item-checkbox__checkbox" id="home-flat-height-check4" name="height_3,5">
+                                            <label for="home-flat-height-check4" class="item-checkbox__label">3,5 м</label>
+                                        </li>
+                                       
+                                        <li class="height__item item-checkbox ">
+                                           
+                                            <input type="checkbox" class="item-checkbox__checkbox" id="home-flat-height-check6" name="height_4">
+                                            <label for="home-flat-height-check6" class="item-checkbox__label">4 м</label>
+                                        </li>
+                                       
+                                       
+                                    </ul>
+                                    </div>
+                            </div>
+                            <div class="item-apartment-building__year year">
+                                <h2 class="year__title title-parameters">Год постройки</h2>
+                                <div class="year__content">
+                                <div class="year__items">
+                                    <div class="year__item item-filter">
+                                        <div class="item-filter__inputs">
+                                            <div class="item-filter__body">
+                                                <input type="number" class="item-filter__input item-filter__input-one">
+                                                <label  class="item-filter__label">От</label>
+                                            </div>
+                                            <div class="item-filter__body">
+                                                <input type="number" class="item-filter__input item-filter__input-two">
+                                                <label  class="item-filter__label">До</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="year__swiper">
+                                    <ul class="year__list ">
+                                        <li class="year__item item-checkbox checked">
+                                            <input type="checkbox" class="item-checkbox__checkbox" id="home-flat-year-check1" name="year_60e" checked>
+                                            <label for="home-flat-year-check1" class="item-checkbox__label">60e</label>
+                                        </li>
+                                        <li class="year__item item-checkbox checked">
+                                           
+                                            <input type="checkbox" class="item-checkbox__checkbox" id="home-flat-year-check2" name="year_70e" checked>
+                                            <label for="home-flat-year-check2" class="item-checkbox__label">70e</label>
+                                        </li>
+                                        <li class="year__item item-checkbox checked">
+                                           
+                                            <input type="checkbox" class="item-checkbox__checkbox" id="home-flat-year-check3" name="year_80e" checked>
+                                            <label for="home-flat-year-check3" class="item-checkbox__label">80e</label>
+                                        </li>
+                                        <li class="year__item item-checkbox ">
+                                           
+                                            <input type="checkbox" class="item-checkbox__checkbox" id="home-flat-year-check4" name="year_90e">
+                                            <label for="home-flat-year-check4" class="item-checkbox__label">90e</label>
+                                        </li>
+                                        <li class="year__item item-checkbox ">
+                                           
+                                            <input type="checkbox" class="item-checkbox__checkbox" id="home-flat-year-check5" name="year_0e">
+                                            <label for="home-flat-year-check5" class="item-checkbox__label">00e</label>
+                                        </li>
+                                  
+                                       
+                                    </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-apartment-building__parking parking">
+                                <h3 class="parking__title subtitle-parameters">Парковка</h3>
+                                <ul class="parking__list">
+                                    <li class="parking__item item-checkbox checked">
+                                        <input type="checkbox" class="item-checkbox__checkbox" id="room-flat-parking_check1" name="roof" checked>
+                                        <label for="room-flat`  -parking_check1" class="item-checkbox__label">На крыше</label>
+                                    </li>
+                                    <li class="parking__item item-checkbox">
+                                        <input type="checkbox" class="item-checkbox__checkbox" id="room-flat-parking_check2" name="underground">
+                                        <label for="room-flat-parking_check2" class="item-checkbox__label">Подземная</label>
+                                    </li>
+                                    <li class="parking__item item-checkbox">
+                                        <input type="checkbox" class="item-checkbox__checkbox" id="room-flat-parking_check3" name="ground">
+                                        <label for="room-flat-parking_check3" class="item-checkbox__label">Наземная</label>
+                                    </li>
+                                    <li class="parking__item item-checkbox">
+                                        <input type="checkbox" class="item-checkbox__checkbox" id="room-flat-parking_check4" name="multilevel">
+                                        <label for="room-flat-parking_check4" class="item-checkbox__label">Многоуровневая</label>
+                                    </li>
+                                   
+                                    
+                                </ul>
+                            </div>
+                            <div class="item-apartment-building__elevator elevator">
+                                <h3 class="elevator__title subtitle-parameters">Лифт</h3>
+                                <ul class="elevator__list">
+                                    <li class="elevator__item item-checkbox checked">
+                                        <input type="checkbox" class="item-checkbox__checkbox" id="elevator-buy_check1" name="any" checked>
+                                        <label for="elevator-buy_check1" class="item-checkbox__label">Есть любой</label>
+                                    </li>
+                                    <li class="elevator__item item-checkbox">
+                                        <input type="checkbox" class="item-checkbox__checkbox" id="elevator-buy_check2" name="cargo">
+                                        <label for="elevator-buy_check2" class="item-checkbox__label">Есть грузовой</label>
+                                    </li>
+                                   
+                                    
+                                </ul>
+                            </div>
+                            <div class="item-apartment-building__numberOfFloors numberOfFloors">
+                                <h3 class="numberOfFloors__title subtitle-parameters">Количество этажей</h3>
+                                <div class="numberOfFloors__body">
+                                    <div class="numberOfFloors__label">Этажей в доме</div>
+                                    <input type="number" class="numberOfFloors__input">
+                                </div>  
+                                <div class="numberOfFloors__items">
+                                    <div class="numberOfFloors__item">
+                                        <label class="numberOfFloors__label">Этаж</label>
+                                        <input type="number" class="numberOfFloors__input">
+                                    </div>
+                                    <div class="numberOfFloors__item">
+                                        <label class="numberOfFloors__label">В доме</label>
+                                        <input type="number" class="numberOfFloors__input">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="apartment__content">
+                    <div class="apartment__photo photo-apartment">
+                        <div class="photo-apartment__content content-photo">
+                        <h2 class="photo-apartment__title title-apartment">Фото</h2>
+                
+                        <div class="photo-apartment__images photo-apartment__images--photo">
+                            <div class="photo-apartment__body">
+                                <div class="photo-apartment__image">
+                                    <picture><source srcset="img/photo-flat1.webp" type="image/webp"><picture><source srcset="img/photo-flat1.webp" type="image/webp"><img src="img/photo-flat1.jpg" alt="план" class="photo-apartment__img"></picture></picture>
+                                    <button type="button" class="photo-apartment__close _icon-close1"></button>
+                                </div>
+                                <div class="photo-apartment__switch switch">
+                                    <label class="switch__label">
+                                        <input type="checkbox" checked class="switch__input">
+                                        <span class="switch__slider"></span>
+                                    </label>
+                                    <div class="switch__title">Сделать главной</div>
+                                </div>
+                            </div>
+                            <div class="photo-apartment__body">
+                                <div class="photo-apartment__image">
+                                    <picture><source srcset="img/photo-flat.webp" type="image/webp"><picture><source srcset="img/photo-flat.webp" type="image/webp"><img src="img/photo-flat.jpg" alt="план" class="photo-apartment__img"></picture></picture>
+                                    <button type="button" class="photo-apartment__close _icon-close1"></button>
+                                </div>
+                                <div class="photo-apartment__switch switch">
+                                    <label class="switch__label">
+                                        <input type="checkbox" checked class="switch__input">
+                                        <span class="switch__slider"></span>
+                                    </label>
+                                    <div class="switch__title">Сделать главной</div>
+                                </div>
+                            </div>
+                          
+                            
+                        </div>
+                    </div>
+                    <div class="photo-apartment__content content-plan">
+                        <h2 class="photo-apartment__title title-apartment">Планировка</h2>
+                
+                        <div class="photo-apartment__images photo-apartment__images--plan">
+                            <div class="photo-apartment__body ">
+                                <div class="photo-apartment__image">
+                                    <picture><source srcset="img/plan.webp" type="image/webp"><picture><source srcset="img/plan.webp" type="image/webp"><img src="img/plan.jpg" alt="план" class="photo-apartment__img"></picture></picture>
+                                    <button type="button" class="photo-apartment__close _icon-close1"></button>
+                                </div>
+                                <div class="photo-apartment__switch switch">
+                                    <label class="switch__label">
+                                        <input type="checkbox" checked class="switch__input">
+                                        <span class="switch__slider"></span>
+                                    </label>
+                                    <div class="switch__title">Сделать главной</div>
+                                </div>
+                            </div>
+                            <div class="photo-apartment__body ">
+                                <div class="photo-apartment__image photo-apartment__image--plan">
+                                    <picture><source srcset="img/plan2.webp" type="image/webp"><picture><source srcset="img/plan2.webp" type="image/webp"><img src="img/plan2.jpg" alt="план" class="photo-apartment__img"></picture></picture>
+                                    <button type="button" class="photo-apartment__close _icon-close1"></button>
+                                </div>
+                                <div class="photo-apartment__switch switch">
+                                    <label class="switch__label">
+                                        <input type="checkbox" checked class="switch__input">
+                                        <span class="switch__slider"></span>
+                                    </label>
+                                    <div class="switch__title">Сделать главной</div>
+                                </div>
+                            </div>
+                          
+                            
+                        </div>
+                    </div>
+                        <ul class="photo-apartment__list">
+                            <li class="photo-apartment__item addPhoto active">
+                                <a href="#" class="photo-apartment__link ">Добавить фотографии</a>
+                            </li>
+                            <li class="photo-apartment__item addLayout">
+                                <a href="#" class="photo-apartment__link ">Добавить планировку</a>
+                            </li>
+                            <li class="photo-apartment__item addPanorama">
+                                <a href="#" class="photo-apartment__link ">Добавить панораму</a>
+                            </li>
+                        </ul>
+                    </div>
+                <div class="apartment__adTitle adTitle-apartment">
+                    <h2 class="adTitle-apartment__title title-apartment">Заголовок объявления</h2>
+                    <div class="adTitle-apartment__body">
+                        <input type="text" class="adTitle-apartment__input" placeholder="Заголовок">
+                        <textarea name="objectDescription" class="adTitle-apartment__textarea" placeholder="Описание объекта"></textarea>
+                    </div>
+                </div>
+                <div class="apartment__propertyValuation propertyValuation-apartment _icon-arrow1">
+                    <h2 class="propertyValuation-apartment__title">Оценка недвижимости</h2>
+                    <div class="propertyValuation-apartment__subtitle">Проверьте стоимость  недвижимости</div>
+                </div>
+                
+                <div class="apartment__deal deal-apartment">
+                    <h2 class="deal-apartment__title title-apartment">Условия сделки</h2>
+                    <div class="deal-apartment__body">
+                        <input type="number" class="deal-apartment__input">
+                        <label class="deal-apartment__label">Цена, ₽</label>
+                    </div>
+                    <div class="deal-apartment__switch switch">
+                        <label class="switch__label">
+                            <input type="checkbox" checked class="switch__input">
+                            <span class="switch__slider"></span>
+                        </label>
+                        <div class="switch__title">Можно в ипотеку</div>
+                    </div>
+                    <div class="item-apartment-building__items accordion-apartment">
+                        <div class="accordion-apartment__item">
+                         
+                            <select class="select-styled" placeholder="Тип сделки">
+                                <option value="">Тип сделки</option>
+                                <option>Свободная</option>
+                                <option>Альтернативная</option>
+                                
+                            </select>
+                        </div>
+                        <div class="accordion-apartment__item">
+                          
+                            <select class="select-styled" placeholder="Бонус агенту">
+                                <option value="">Бонус агенту</option>
+                                <option>Фиксированная сумма</option>
+                                <option>Процент от сделки</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+        
+
+                </div>
+                <div class="apartment__contacts contacts-apartment">
+                    <h2 class="contacts-apartment__title title-apartment">Контакты</h2>
+                    
+                    <div class="contacts-apartment__body">
+                        <div id="done" class="check-done _icon-check"></div>
+                        
+                        <input id="phone" name="phone" type="tel" class="contacts-apartment__input" placeholder="+7 000 000 00 00"></input>
+                       
+                    </div>
+                    <a href="#" class="contacts-apartment__add _icon-plus1">Добавить еще один телефон</a>
+                </div>
+            </div>
+            <div class="apartment__button">
+                <button type="button" class="apartment__btn further">Далее</button>
+            </div>
+            <div class="apartment__buttons">
+                <div class="apartment__buttons-content">
+                <button type="button" class="apartment__bt">Предпросмотр объявления</button>
+                <button type="button" class="apartment__bt">Сохранить шаблон</button>
+            </div>
+                <button  type="button" class="toPublish apartment__bt apartment__bt-blue">Опубликовать объявление</button>
+            </div>
+        </div>
+       
+    <div class="apartment__tabs-content home-content"  data-sell-target="home">
+        <div class="apartment__items">
+            <div class="apartment__item item-apartment-location">
+                <h2 class="item-apartment-location__title title-apartment">Расположение</h2> 
+                <div class="item-apartment-location__search">
+                    <button type="button" class="item-apartment-location__btn-search _icon-search"></button>
+                    <input type="text" class="item-apartment-location__input-search" placeholder="Адрес">
+
+                </div>
+              
+            </div>
+            <div class="apartment__item item-apartment-aboutTheObject">
+                <h2 class="item-apartment-aboutTheObject__title title-apartment">Об объекте</h2> 
+               
+              <div class="item-apartment-aboutTheObject__body">
+                <input type="text" id="cadastral_number" placeholder="__:__:_______:__"  class="item-apartment-aboutTheObject__input">
+                <div id="done-cadastral-home" class="check-done _icon-check"></div>
+              </div>
+              <div class="item-apartment-aboutTheObject__bottom">
+                <h3 class="item-apartment-aboutTheObject__subtitle">Количество комнат</h3>
+                <div class="item-apartment-aboutTheObject__block block-content">
+                    <ul class="block-content__list">
+                        <li class="block-content__item block-content__item-one ">
+                            <input checked type="checkbox" class="block-content__input" id="sellstudio"name="studio">
+                            <label for="sellstudio" class="block-content__link block-content__link--one">Студия</label>
+                        </li>
+                        <li class="block-content__item active">
+                            <input checked type="checkbox" class="block-content__input" id="sellone" value="one" name="one">
+                            <label for="sellone" class="block-content__link">1</label>
+                        </li>
+                        <li class="block-content__item">
+                            <input type="checkbox" class="block-content__input" id="selltwo" value="two" name="two">
+                            <label for="selltwo" class="block-content__link">2</label>
+                        </li>
+                        <li class="block-content__item">
+                            <input type="checkbox" class="block-content__input" id="sellthree" value="three" name="three">
+                            <label for="sellthree" class="block-content__link">3</label>
+                        </li>
+                        <li class="block-content__item active">
+                            <input checked type="checkbox" class="block-content__input" id="sellfour" value="four" name="four">
+                            <label for="sellfour" class="block-content__link">4+</label>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+              <div class="item-apartment-building__numberOfFloors numberOfFloors">
+                <h3 class="numberOfFloors__title subtitle-parameters">Количество этажей</h3>
+                <div class="numberOfFloors__body">
+                    <div class="numberOfFloors__label">Этажей в доме</div>
+                    <input type="number" class="numberOfFloors__input">
+                </div>  
+                <div class="numberOfFloors__items">
+                    <div class="numberOfFloors__item">
+                        <label class="numberOfFloors__label">Этаж</label>
+                        <input type="number" class="numberOfFloors__input">
+                    </div>
+                    <div class="numberOfFloors__item">
+                        <label class="numberOfFloors__label">В доме</label>
+                        <input type="number" class="numberOfFloors__input">
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="apartment__item item-apartment-area">
+                <h2 class="item-apartment-area__title title-apartment">Площадь</h2> 
+                <div class="area__items">
+                    <div class="area__item item-filter">
+                        <h3 class="item-filter__title">Общая</h3>
+                        <div class="item-filter__inputs">
+
+                            <div class="item-filter__body">
+                                <input type="number" class="item-filter__input">
+                                <label for="" class="item-filter__label">От</label>
+                            </div>
+                            <div class="item-filter__body">
+                                <input type="number" class="item-filter__input">
+                                <label for="" class="item-filter__label">До</label>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                   
+                    <div class="area__item item-filter">
+                        <h3 class="item-filter__title">Жилая</h3>
+                        <div class="item-filter__inputs">
+                            
+                            <div class="item-filter__body">
+                                <input type="number" class="item-filter__input">
+                                <label for="" class="item-filter__label">От</label>
+                            </div>
+                            <div class="item-filter__body">
+                                <input type="number" class="item-filter__input">
+                                <label for="" class="item-filter__label">До</label>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="apartment__item item-apartment-other">
+                <h2 class="item-apartment-other__title title-apartment">Прочее</h2> 
+                <div class="item-apartment-other__content">
+                    <div class="other__body home">
+                        <div class="item-apartment-other__items accordion-apartment">
+                            <div class="accordion-apartment__item">
+                               
+                                <select class="select-styled" placeholder="Материал">
+                                    <option value="">Материал</option>
+                                    <option>Косметический</option>
+                                    <option>Капитальный</option>
+                                    <option>Восстановительный</option>
+                                </select>
+                            </div>
+                            <div class="accordion-apartment__item">
+                             
+                                <select class="select-styled" placeholder="Ремонт">
+                                    <option value="">Ремонт</option>
+                                    <option>Косметический</option>
+                                    <option>Капитальный</option>
+                                    <option>Восстановительный</option>
+                                </select>
+                                
+                            </div>
+                            <div class="accordion-apartment__item">
+                              
+                                <select class="select-styled" placeholder="Тип ванны">
+                                    <option value="">Тип ванны</option>
+                                    <option>Косметический</option>
+                                    <option>Капитальный</option>
+                                    <option>Восстановительный</option>
+                                </select>
+                            </div>
+                            <div class="accordion-apartment__item">
+                              
+                                <select class="select-styled" placeholder="Тип отопления">
+                                    <option value="">Тип отопления</option>
+                                    <option>Косметический</option>
+                                    <option>Капитальный</option>
+                                    <option>Восстановительный</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="other-parameters__content">
+                            <div class="other-parameters__body">
+                                <div class="other-parameters__balcony-loggia balcony-loggia">
+                                    <h3 class="balcony-loggia__title subtitle-parameters">Балкон/ Лоджия</h3>
+                                    <ul class="balcony-loggia__list" id="balcony-buy">
+                                        <li class="balcony-loggia__item item-checkbox checked">
+                                            <input type="checkbox" class="item-checkbox__checkbox" id="balcony-home_check1" name="balcony" checked>
+                                            <label for="balcony-home_check1" class="item-checkbox__label">Балкон</label>
+                                        </li>
+                                        <li  class="balcony-loggia__item item-checkbox">
+                                           
+                                            <input type="checkbox" class="item-checkbox__checkbox" id="balcony-home_check2" name="loggia">
+                                            <label for="balcony-home_check2" class="item-checkbox__label">Лоджия</label>
+                                        </li>
+                                        <li class="balcony-loggia__item item-checkbox  item-checkbox-no">
+                                            <input type="checkbox" class="item-checkbox__checkbox item-checkbox__checkbox-no" id="balcony-home_check3" name="no">
+                                            <label for="balcony-home_check3" class="item-checkbox__label">Нет</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                        <div class="other-parameters__bathroom bathroom">
+                            <h3 class="bathroom__title subtitle-parameters">Санузел</h3>
+                            <div class="bathroom__body body-choice">
+                               
+                                <ul class="body-choice__list">
+                                    <li class="body-choice__item  bathroom-choicetakeOff--room">
+                                        <input checked type="radio" class="body-choice__input" id="homeCombined" name="homeBathroom" value="combined">
+                                        <label for="homeCombined" class="body-choice__label">Совмещенный</label>
+                                        
+                                    </li>
+                                    <li class="body-choice__item  bathroom-choicetakeOff--room active">
+                                        <input type="radio" class="body-choice__input" id="homeSeparate" name="homeBathroom" value="separate">
+                                        <label for="homeSeparate" class="body-choice__label">Раздельный</label>
+                                      
+                                    </li>
+                                    <li class="body-choice__item bathroom-choicetakeOff--room">
+                                        <input type="radio" class="body-choice__input" id="homeSeveral" name="homeBathroom" value="several">
+                                        <label for="homeSeveral" class="body-choice__label">Несколько</label>
+                                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="other-parameters__windows windows">
+                            <h3 class="windows__title subtitle-parameters">Окна</h3>
+                            <div class="windows__body body-choice">
+                               
+                                <ul class="body-choice__list">
+                                    <li class="body-choice__item bathroom-choiceBuy--home">Дерево</li>
+                                    <li class="body-choice__item bathroom-choiceBuy--home active">Пластик</li>
+                                    <li class="body-choice__item bathroom-choiceBuy--home">И то, и то</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-apartment-building__parking parking">
+                            <h3 class="parking__title subtitle-parameters">Парковка</h3>
+                            <ul class="parking__list">
+                                <li class="parking__item item-checkbox checked">
+                                    <input type="checkbox" class="item-checkbox__checkbox" id="room-flat-parking_check1" name="roof" checked>
+                                    <label for="room-flat`  -parking_check1" class="item-checkbox__label">На крыше</label>
+                                </li>
+                                <li class="parking__item item-checkbox">
+                                    <input type="checkbox" class="item-checkbox__checkbox" id="room-flat-parking_check2" name="underground">
+                                    <label for="room-flat-parking_check2" class="item-checkbox__label">Подземная</label>
+                                </li>
+                                <li class="parking__item item-checkbox">
+                                    <input type="checkbox" class="item-checkbox__checkbox" id="room-flat-parking_check3" name="ground">
+                                    <label for="room-flat-parking_check3" class="item-checkbox__label">Наземная</label>
+                                </li>
+                                <li class="parking__item item-checkbox">
+                                    <input type="checkbox" class="item-checkbox__checkbox" id="room-flat-parking_check4" name="multilevel">
+                                    <label for="room-flat-parking_check4" class="item-checkbox__label">Многоуровневая</label>
+                                </li>
+                               
+                                
+                            </ul>
+                        </div>
+
+                    </div>
+                    </div>
+                    <div class="item-apartment-building__elevator elevator">
+                        <h3 class="elevator__title subtitle-parameters">Лифт</h3>
+                        <ul class="elevator__list">
+                            <li class="elevator__item item-checkbox checked">
+                                <input type="checkbox" class="item-checkbox__checkbox" id="elevator-buy_check1" name="any" checked>
+                                <label for="elevator-buy_check1" class="item-checkbox__label">Есть любой</label>
+                            </li>
+                            <li class="elevator__item item-checkbox">
+                                <input type="checkbox" class="item-checkbox__checkbox" id="elevator-buy_check2" name="cargo">
+                                <label for="elevator-buy_check2" class="item-checkbox__label">Есть грузовой</label>
+                            </li>
+                           
+                            
+                        </ul>
+                    </div>
+                    <div class="filter-parameters__conveniences conveniences">
+                        <ul class="conveniences__list">
+                            <li class="conveniences__item item-checkbox checked">
+                                <input type="checkbox" class="item-checkbox__checkbox" id="home-buy-check1" name="electricity" checked>
+                                <label for="home-buy-check1" class="item-checkbox__label">Электричество</label>
+                            </li>
+                            <li class="conveniences__item item-checkbox">
+                               
+                                <input type="checkbox" class="item-checkbox__checkbox" id="home-buy-check2" name="gas">
+                                <label for="home-buy-check2" class="item-checkbox__label">Газ</label>
+                            </li>
+                            <li class="conveniences__item item-checkbox checked">
+                               
+                                <input type="checkbox" class="item-checkbox__checkbox" id="home-buy-check3" name="internet" checked>
+                                <label for="home-buy-check3" class="item-checkbox__label">Интернет</label>
+                            </li>
+                            <li class="conveniences__item item-checkbox checked">
+                               
+                                <input type="checkbox" class="item-checkbox__checkbox" id="home-buy-check4" name="sewageSystem" checked>
+                                <label for="home-buy-check4" class="item-checkbox__label">Канализация</label>
+                            </li>
+                            <li class="conveniences__item item-checkbox">
+                              
+                                <input type="checkbox" class="item-checkbox__checkbox" id="home-buy-check5" name="waterSupply">
+                                <label for="home-buy-check5" class="item-checkbox__label">Водоснабжение</label>
+                            </li>
+                            <li class="conveniences__item item-checkbox checked">
+                                
+                                <input type="checkbox" class="item-checkbox__checkbox" id="home-buy-check6" name="pool" checked>
+                                <label for="home-buy-check6" class="item-checkbox__label">Бассейн</label>
+                            </li>
+                            <li class="conveniences__item item-checkbox">
+                               
+                                <input type="checkbox" class="item-checkbox__checkbox" id="home-buy-check7" name="phone">
+                                <label for="home-buy-check7" class="item-checkbox__label">Телефон</label>
+                            </li>
+                            <li class="conveniences__item item-checkbox checked">
+                                
+                                <input type="checkbox" class="item-checkbox__checkbox" id="home-buy-check8" name="garage" checked>
+                                <label for="home-buy-check8" class="item-checkbox__label">Гараж</label>
+                            </li>
+                            <li class="conveniences__item item-checkbox checked">
+                               
+                                <input type="checkbox" class="item-checkbox__checkbox" id="home-buy-check9" name="bathhouse" checked>
+                                <label for="home-buy-check9" class="item-checkbox__label">Баня</label>
+
+                            </li>
+      
+
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="apartment__item item-apartment-building">
+                <h2 class="item-apartment-building__title title-apartment">О здании</h2> 
+                <div class="item-apartment-building__content">
+                    <div class="item-apartment-building__items accordion-apartment">
+                        <div class="accordion-apartment__item">
+                            <select class="select-styled" placeholder="Тип дома">
+                                <option value="">Тип дома</option>
+                                <option>Монолитный</option>
+                                <option>Монолитно-кирпичные дома</option>
+                                <option>Кирпичный</option>
+                                <option>Панельный</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    <div class="item-apartment-building__height height">
+                        <h2 class="height__title title-parameters">Высота потолков</h2>
+                        <div class="height__swiper">
+                            <ul class="height__list">
+                                
+                                <li class="height__item item-checkbox checked">
+                                    <input type="checkbox" class="item-checkbox__checkbox" id="home-home-height-check1" name="height_2,5" checked>
+                                    <label for="home-home-height-check1" class="item-checkbox__label">2,5 м</label>
+                                </li>
+                                <li class="height__item item-checkbox checked">
+                                   
+                                    <input type="checkbox" class="item-checkbox__checkbox" id="home-home-height-check2" name="height_2,7" checked>
+                                    <label for="home-home-height-check2" class="item-checkbox__label">2,7 м</label>
+                                </li>
+                                <li class="height__item item-checkbox  checked">
+                                   
+                                    <input type="checkbox" class="item-checkbox__checkbox" id="home-home-height-check3" name="height_3" checked>
+                                    <label for="home-home-height-check3" class="item-checkbox__label">3 м</label>
+                                </li>
+                                <li class="height__item item-checkbox ">
+                                   
+                                    <input type="checkbox" class="item-checkbox__checkbox" id="home-home-height-check4" name="height_3,5">
+                                    <label for="home-home-height-check4" class="item-checkbox__label">3,5 м</label>
+                                </li>
+                               
+                                <li class="height__item item-checkbox ">
+                                   
+                                    <input type="checkbox" class="item-checkbox__checkbox" id="home-home-height-check6" name="height_4">
+                                    <label for="home-home-height-check6" class="item-checkbox__label">4 м</label>
+                                </li>
+                               
+                               
+                            </ul>
+                            </div>
+                    </div>
+                    <div class="item-apartment-building__year year">
+                        <h2 class="year__title title-parameters">Год постройки</h2>
+                        <div class="year__content">
+                        <div class="year__items">
+                            <div class="year__item item-filter">
+                                <div class="item-filter__inputs">
+                                    <div class="item-filter__body">
+                                        <input type="number" class="item-filter__input item-filter__input-one">
+                                        <label  class="item-filter__label">От</label>
+                                    </div>
+                                    <div class="item-filter__body">
+                                        <input type="number" class="item-filter__input item-filter__input-two">
+                                        <label  class="item-filter__label">До</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="year__swiper">
+                            <ul class="year__list ">
+                                <li class="year__item item-checkbox checked">
+                                    <input type="checkbox" class="item-checkbox__checkbox" id="home-home-year-check1" name="year_60e" checked>
+                                    <label for="home-home-year-check1" class="item-checkbox__label">60e</label>
+                                </li>
+                                <li class="year__item item-checkbox checked">
+                                   
+                                    <input type="checkbox" class="item-checkbox__checkbox" id="home-home-year-check2" name="year_70e" checked>
+                                    <label for="home-home-year-check2" class="item-checkbox__label">70e</label>
+                                </li>
+                                <li class="year__item item-checkbox checked">
+                                   
+                                    <input type="checkbox" class="item-checkbox__checkbox" id="home-home-year-check3" name="year_80e" checked>
+                                    <label for="home-home-year-check3" class="item-checkbox__label">80e</label>
+                                </li>
+                                <li class="year__item item-checkbox ">
+                                   
+                                    <input type="checkbox" class="item-checkbox__checkbox" id="home-home-year-check4" name="year_90e">
+                                    <label for="home-home-year-check4" class="item-checkbox__label">90e</label>
+                                </li>
+                                <li class="year__item item-checkbox ">
+                                   
+                                    <input type="checkbox" class="item-checkbox__checkbox" id="home-home-year-check5" name="year_0e">
+                                    <label for="home-home-year-check5" class="item-checkbox__label">00e</label>
+                                </li>
+                          
+                               
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+                   
+                </div>
+               
+            </div>
+        </div>
+        <div class="apartment__content">
+            <div class="apartment__photo photo-apartment">
+                <div class="photo-apartment__content content-photo">
+                <h2 class="photo-apartment__title title-apartment">Фото</h2>
+        
+                <div class="photo-apartment__images photo-apartment__images--photo">
+                    <div class="photo-apartment__body">
+                        <div class="photo-apartment__image">
+                            <picture><source srcset="img/photo-flat1.webp" type="image/webp"><picture><source srcset="img/photo-flat1.webp" type="image/webp"><img src="img/photo-flat1.jpg" alt="план" class="photo-apartment__img"></picture></picture>
+                            <button type="button" class="photo-apartment__close _icon-close1"></button>
+                        </div>
+                        <div class="photo-apartment__switch switch">
+                            <label class="switch__label">
+                                <input type="checkbox" checked class="switch__input">
+                                <span class="switch__slider"></span>
+                            </label>
+                            <div class="switch__title">Сделать главной</div>
+                        </div>
+                    </div>
+                    <div class="photo-apartment__body">
+                        <div class="photo-apartment__image">
+                            <picture><source srcset="img/photo-flat.webp" type="image/webp"><picture><source srcset="img/photo-flat.webp" type="image/webp"><img src="img/photo-flat.jpg" alt="план" class="photo-apartment__img"></picture></picture>
+                            <button type="button" class="photo-apartment__close _icon-close1"></button>
+                        </div>
+                        <div class="photo-apartment__switch switch">
+                            <label class="switch__label">
+                                <input type="checkbox" checked class="switch__input">
+                                <span class="switch__slider"></span>
+                            </label>
+                            <div class="switch__title">Сделать главной</div>
+                        </div>
+                    </div>
+                  
+                    
+                </div>
+            </div>
+            <div class="photo-apartment__content content-plan">
+                <h2 class="photo-apartment__title title-apartment">Планировка</h2>
+        
+                <div class="photo-apartment__images photo-apartment__images--plan">
+                    <div class="photo-apartment__body ">
+                        <div class="photo-apartment__image">
+                            <picture><source srcset="img/plan.webp" type="image/webp"><picture><source srcset="img/plan.webp" type="image/webp"><img src="img/plan.jpg" alt="план" class="photo-apartment__img"></picture></picture>
+                            <button type="button" class="photo-apartment__close _icon-close1"></button>
+                        </div>
+                        <div class="photo-apartment__switch switch">
+                            <label class="switch__label">
+                                <input type="checkbox" checked class="switch__input">
+                                <span class="switch__slider"></span>
+                            </label>
+                            <div class="switch__title">Сделать главной</div>
+                        </div>
+                    </div>
+                    <div class="photo-apartment__body ">
+                        <div class="photo-apartment__image photo-apartment__image--plan">
+                            <picture><source srcset="img/plan2.webp" type="image/webp"><picture><source srcset="img/plan2.webp" type="image/webp"><img src="img/plan2.jpg" alt="план" class="photo-apartment__img"></picture></picture>
+                            <button type="button" class="photo-apartment__close _icon-close1"></button>
+                        </div>
+                        <div class="photo-apartment__switch switch">
+                            <label class="switch__label">
+                                <input type="checkbox" checked class="switch__input">
+                                <span class="switch__slider"></span>
+                            </label>
+                            <div class="switch__title">Сделать главной</div>
+                        </div>
+                    </div>
+                  
+                    
+                </div>
+            </div>
+                <ul class="photo-apartment__list">
+                    <li class="photo-apartment__item addPhoto active">
+                        <a href="#" class="photo-apartment__link ">Добавить фотографии</a>
+                    </li>
+                    <li class="photo-apartment__item addLayout">
+                        <a href="#" class="photo-apartment__link ">Добавить планировку</a>
+                    </li>
+                    <li class="photo-apartment__item addPanorama">
+                        <a href="#" class="photo-apartment__link ">Добавить панораму</a>
+                    </li>
+                </ul>
+            </div>
+        <div class="apartment__adTitle adTitle-apartment">
+            <h2 class="adTitle-apartment__title title-apartment">Заголовок объявления</h2>
+            <div class="adTitle-apartment__body">
+                <input type="text" class="adTitle-apartment__input" placeholder="Заголовок">
+                <textarea name="objectDescription" class="adTitle-apartment__textarea" placeholder="Описание объекта"></textarea>
+            </div>
+        </div>
+        <div class="apartment__propertyValuation propertyValuation-apartment _icon-arrow1">
+            <h2 class="propertyValuation-apartment__title">Оценка недвижимости</h2>
+            <div class="propertyValuation-apartment__subtitle">Проверьте стоимость  недвижимости</div>
+        </div>
+        
+        <div class="apartment__deal deal-apartment">
+            <h2 class="deal-apartment__title title-apartment">Условия сделки</h2>
+            <div class="deal-apartment__body">
+                <input type="number" class="deal-apartment__input">
+                <label class="deal-apartment__label">Цена, ₽</label>
+            </div>
+            <div class="deal-apartment__switch switch">
+                <label class="switch__label">
+                    <input type="checkbox" checked class="switch__input">
+                    <span class="switch__slider"></span>
+                </label>
+                <div class="switch__title">Можно в ипотеку</div>
+            </div>
+            <div class="item-apartment-building__items accordion-apartment">
+                <div class="accordion-apartment__item">
+                 
+                    <select class="select-styled" placeholder="Тип сделки">
+                        <option value="">Тип сделки</option>
+                        <option>Свободная</option>
+                        <option>Альтернативная</option>
+                        
+                    </select>
+                </div>
+                <div class="accordion-apartment__item">
+                  
+                    <select class="select-styled" placeholder="Бонус агенту">
+                        <option value="">Бонус агенту</option>
+                        <option>Фиксированная сумма</option>
+                        <option>Процент от сделки</option>
+                        
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        <div class="apartment__contacts contacts-apartment">
+            <h2 class="contacts-apartment__title title-apartment">Контакты</h2>
+            <div class="contacts-apartment__body">
+                <div class="check-done _icon-check"></div>
+                <input type="tel" class="contacts-apartment__input" placeholder="+7 000 000 00 00"></input>
+            </div>
+            <a href="#" class="contacts-apartment__add _icon-plus1">Добавить еще один телефон</a>
+        </div>
+    </div>
+   
+    <div class="apartment__buttons home-room">
+        <div class="apartment__buttons-content">
+        <button type="button" class="apartment__bt">Предпросмотр объявления</button>
+        <button type="button" class="apartment__bt">Сохранить шаблон</button>
+    </div>
+        <button type="button" class="toPublish apartment__bt apartment__bt-blue">Опубликовать объявление</button>
+    </div>
+</div>
+<div class="apartment__tabs-content room-content"  data-sell-target="room">
+    <div class="apartment__items">
+        <div class="apartment__item item-apartment-location">
+            <h2 class="item-apartment-location__title title-apartment">Расположение</h2> 
+            <div class="item-apartment-location__search">
+                <button type="button" class="item-apartment-location__btn-search _icon-search"></button>
+                <input type="text" class="item-apartment-location__input-search" placeholder="Адрес">
+
+            </div>
+          
+        </div>
+        <div class="apartment__item item-apartment-aboutTheObject room">
+            <h2 class="item-apartment-aboutTheObject__title title-apartment">Кадастровый номер</h2> 
+           
+          <div class="item-apartment-aboutTheObject__body">
+            <input type="text" id="cadastral_number" placeholder="__:__:_______:__" class="item-apartment-aboutTheObject__input">
+            <div id="done-cadastral" class="check-done _icon-check"></div>
+          </div>
+          
+        </div>
+        <div class="apartment__item item-apartment-area">
+            <h2 class="item-apartment-area__title title-apartment">Площадь</h2> 
+            <div class="area__items">
+                <div class="area__item item-filter">
+                    <h3 class="item-filter__title">Общая</h3>
+                    <div class="item-filter__inputs">
+
+                        <div class="item-filter__body">
+                            <input type="number" class="item-filter__input">
+                            <label for="" class="item-filter__label">От</label>
+                        </div>
+                        <div class="item-filter__body">
+                            <input type="number" class="item-filter__input">
+                            <label for="" class="item-filter__label">До</label>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+               
+                <div class="area__item item-filter">
+                    <h3 class="item-filter__title">Жилая</h3>
+                    <div class="item-filter__inputs">
+                        
+                        <div class="item-filter__body">
+                            <input type="number" class="item-filter__input">
+                            <label for="" class="item-filter__label">От</label>
+                        </div>
+                        <div class="item-filter__body">
+                            <input type="number" class="item-filter__input">
+                            <label for="" class="item-filter__label">До</label>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="apartment__item item-apartment-other">
+            <h2 class="item-apartment-other__title title-apartment">Прочее</h2> 
+            <div class="item-apartment-other__content">
+                <div class="other__body room">
+                    <div class="item-apartment-other__items accordion-apartment">
+                        
+                        <div class="accordion-apartment__item">
+                            <select class="select-styled" placeholder="Ремонт">
+                                <option value="">Ремонт</option>
+                                <option>Косметический</option>
+                                <option>Капитальный</option>
+                                <option>Восстановительный</option>
+                            </select>
+                        </div>
+                        
+                      
+                    </div>
+                    <div class="other-parameters__content">
+                        <div class="other-parameters__body">
+                            <div class="other-parameters__balcony-loggia balcony-loggia">
+                                <h3 class="balcony-loggia__title subtitle-parameters">Балкон/ Лоджия</h3>
+                                <ul class="balcony-loggia__list" id="balcony-buy">
+                                    <li class="balcony-loggia__item item-checkbox checked">
+                                        <input type="checkbox" class="item-checkbox__checkbox" id="balcony-room_check1" name="balcony" checked>
+                                        <label for="balcony-room_check1" class="item-checkbox__label">Балкон</label>
+                                    </li>
+                                    <li  class="balcony-loggia__item item-checkbox">
+                                       
+                                        <input type="checkbox" class="item-checkbox__checkbox" id="balcony-room_check2" name="loggia">
+                                        <label for="balcony-room_check2" class="item-checkbox__label">Лоджия</label>
+                                    </li>
+                                    <li class="balcony-loggia__item item-checkbox  item-checkbox-no">
+                                        <input type="checkbox" class="item-checkbox__checkbox item-checkbox__checkbox-no" id="balcony-home_check3" name="no">
+                                        <label for="balcony-home_check3" class="item-checkbox__label">Нет</label>
+                                    </li>
+                                </ul>
+                            </div>
+                 
+                    <div class="other-parameters__windows windows">
+                        <h3 class="windows__title subtitle-parameters">Окна</h3>
+                        <div class="windows__body body-choice">
+                           
+                            <ul class="body-choice__list">
+                                <li class="body-choice__item bathroom-choiceBuy--home">Дерево</li>
+                                <li class="body-choice__item bathroom-choiceBuy--home active">Пластик</li>
+                                <li class="body-choice__item bathroom-choiceBuy--home">И то, и то</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+                </div>
+              
+                <div class="filter-parameters__conveniences conveniences">
+                    <ul class="conveniences__list">
+                        <li class="conveniences__item item-checkbox checked">
+                            <input type="checkbox" class="item-checkbox__checkbox" id="room-buy-check1" name="electricity" checked>
+                            <label for="room-buy-check1" class="item-checkbox__label">Электричество</label>
+                        </li>
+                        <li class="conveniences__item item-checkbox">
+                           
+                            <input type="checkbox" class="item-checkbox__checkbox" id="room-buy-check2" name="gas">
+                            <label for="room-buy-check2" class="item-checkbox__label">Газ</label>
+                        </li>
+                        <li class="conveniences__item item-checkbox checked">
+                           
+                            <input type="checkbox" class="item-checkbox__checkbox" id="room-buy-check3" name="internet" checked>
+                            <label for="room-buy-check3" class="item-checkbox__label">Интернет</label>
+                        </li>
+                        <li class="conveniences__item item-checkbox checked">
+                           
+                            <input type="checkbox" class="item-checkbox__checkbox" id="room-buy-check4" name="sewageSystem" checked>
+                            <label for="room-buy-check4" class="item-checkbox__label">Канализация</label>
+                        </li>
+                        <li class="conveniences__item item-checkbox">
+                          
+                            <input type="checkbox" class="item-checkbox__checkbox" id="room-buy-check5" name="waterSupply">
+                            <label for="room-buy-check5" class="item-checkbox__label">Водоснабжение</label>
+                        </li>
+                        <li class="conveniences__item item-checkbox checked">
+                            
+                            <input type="checkbox" class="item-checkbox__checkbox" id="room-buy-check6" name="pool" checked>
+                            <label for="room-buy-check6" class="item-checkbox__label">Бассейн</label>
+                        </li>
+                        <li class="conveniences__item item-checkbox">
+                           
+                            <input type="checkbox" class="item-checkbox__checkbox" id="room-buy-check7" name="phone">
+                            <label for="room-buy-check7" class="item-checkbox__label">Телефон</label>
+                        </li>
+                        <li class="conveniences__item item-checkbox checked">
+                            
+                            <input type="checkbox" class="item-checkbox__checkbox" id="room-buy-check8" name="garage" checked>
+                            <label for="room-buy-check8" class="item-checkbox__label">Гараж</label>
+                        </li>
+                        <li class="conveniences__item item-checkbox checked">
+                           
+                            <input type="checkbox" class="item-checkbox__checkbox" id="room-buy-check9" name="bathhouse" checked>
+                            <label for="room-buy-check9" class="item-checkbox__label">Баня</label>
+
+                        </li>
+  
+
+                    </ul>
+                </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="apartment__item item-apartment-building">
+            <h2 class="item-apartment-building__title title-apartment">О здании</h2> 
+            <div class="item-apartment-building__content">
+                <div class="item-apartment-building__items accordion-apartment">
+                    <div class="accordion-apartment__item">
+                        <select class="select-styled" placeholder="Тип дома">
+                            <option value="">Тип дома</option>
+                            <option>Монолитный</option>
+                            <option>Монолитно-кирпичные дома</option>
+                            <option>Кирпичный</option>
+                            <option>Панельный</option>
+                        </select>
+                    </div>
+                   
+                </div>
+                <div class="item-apartment-building__height height">
+                    <h2 class="height__title title-parameters">Высота потолков</h2>
+                    <div class="height__swiper">
+                        <ul class="height__list">
+                            
+                            <li class="height__item item-checkbox checked">
+                                <input type="checkbox" class="item-checkbox__checkbox" id="home-room-height-check1" name="height_2,5" checked>
+                                <label for="home-room-height-check1" class="item-checkbox__label">2,5 м</label>
+                            </li>
+                            <li class="height__item item-checkbox checked">
+                               
+                                <input type="checkbox" class="item-checkbox__checkbox" id="home-room-height-check2" name="height_2,7" checked>
+                                <label for="home-room-height-check2" class="item-checkbox__label">2,7 м</label>
+                            </li>
+                            <li class="height__item item-checkbox  checked">
+                               
+                                <input type="checkbox" class="item-checkbox__checkbox" id="home-room-height-check3" name="height_3" checked>
+                                <label for="home-room-height-check3" class="item-checkbox__label">3 м</label>
+                            </li>
+                            <li class="height__item item-checkbox ">
+                               
+                                <input type="checkbox" class="item-checkbox__checkbox" id="home-room-height-check4" name="height_3,5">
+                                <label for="home-room-height-check4" class="item-checkbox__label">3,5 м</label>
+                            </li>
+                           
+                            <li class="height__item item-checkbox ">
+                               
+                                <input type="checkbox" class="item-checkbox__checkbox" id="home-room-height-check6" name="height_4">
+                                <label for="home-room-height-check6" class="item-checkbox__label">4 м</label>
+                            </li>
+                           
+                           
+                        </ul>
+                        </div>
+                </div>
+                <div class="item-apartment-building__year year">
+                    <h2 class="year__title title-parameters">Год постройки</h2>
+                    <div class="year__content">
+                    <div class="year__items">
+                        <div class="year__item item-filter">
+                            <div class="item-filter__inputs">
+                                <div class="item-filter__body">
+                                    <input type="number" class="item-filter__input item-filter__input-one">
+                                    <label  class="item-filter__label">От</label>
+                                </div>
+                                <div class="item-filter__body">
+                                    <input type="number" class="item-filter__input item-filter__input-two">
+                                    <label  class="item-filter__label">До</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="year__swiper">
+                        <ul class="year__list ">
+                            <li class="year__item item-checkbox checked">
+                                <input type="checkbox" class="item-checkbox__checkbox" id="home-room-year-check1" name="year_60e" checked>
+                                <label for="home-room-year-check1" class="item-checkbox__label">60e</label>
+                            </li>
+                            <li class="year__item item-checkbox checked">
+                               
+                                <input type="checkbox" class="item-checkbox__checkbox" id="home-room-year-check2" name="year_70e" checked>
+                                <label for="home-room-year-check2" class="item-checkbox__label">70e</label>
+                            </li>
+                            <li class="year__item item-checkbox checked">
+                               
+                                <input type="checkbox" class="item-checkbox__checkbox" id="home-room-year-check3" name="year_80e" checked>
+                                <label for="home-room-year-check3" class="item-checkbox__label">80e</label>
+                            </li>
+                            <li class="year__item item-checkbox ">
+                               
+                                <input type="checkbox" class="item-checkbox__checkbox" id="home-room-year-check4" name="year_90e">
+                                <label for="home-room-year-check4" class="item-checkbox__label">90e</label>
+                            </li>
+                            <li class="year__item item-checkbox ">
+                               
+                                <input type="checkbox" class="item-checkbox__checkbox" id="home-room-year-check5" name="year_0e">
+                                <label for="home-room-year-check5" class="item-checkbox__label">00e</label>
+                            </li>
+                      
+                           
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-apartment-building__parking parking">
+                    <h3 class="parking__title subtitle-parameters">Парковка</h3>
+                    <ul class="parking__list">
+                        <li class="parking__item item-checkbox checked">
+                            <input type="checkbox" class="item-checkbox__checkbox" id="room-room-parking_check1" name="roof" checked>
+                            <label for="room-room-parking_check1" class="item-checkbox__label">На крыше</label>
+                        </li>
+                        <li class="parking__item item-checkbox">
+                            <input type="checkbox" class="item-checkbox__checkbox" id="room-room-parking_check2" name="underground">
+                            <label for="room-room-parking_check2" class="item-checkbox__label">Подземная</label>
+                        </li>
+                        <li class="parking__item item-checkbox">
+                            <input type="checkbox" class="item-checkbox__checkbox" id="room-room-parking_check3" name="ground">
+                            <label for="room-room-parking_check3" class="item-checkbox__label">Наземная</label>
+                        </li>
+                        <li class="parking__item item-checkbox">
+                            <input type="checkbox" class="item-checkbox__checkbox" id="room-room-parking_check4" name="multilevel">
+                            <label for="room-room-parking_check4" class="item-checkbox__label">Многоуровневая</label>
+                        </li>
+                       
+                        
+                    </ul>
+                </div>
+               
+               
+            </div>
+           
+        </div>
+    </div>
+    <div class="apartment__content">
+        <div class="apartment__photo photo-apartment">
+            <div class="photo-apartment__content content-photo">
+            <h2 class="photo-apartment__title title-apartment">Фото</h2>
+    
+            <div class="photo-apartment__images photo-apartment__images--photo">
+                <div class="photo-apartment__body">
+                    <div class="photo-apartment__image">
+                        <picture><source srcset="img/photo-flat1.webp" type="image/webp"><picture><source srcset="img/photo-flat1.webp" type="image/webp"><img src="img/photo-flat1.jpg" alt="план" class="photo-apartment__img"></picture></picture>
+                        <button type="button" class="photo-apartment__close _icon-close1"></button>
+                    </div>
+                    <div class="photo-apartment__switch switch">
+                        <label class="switch__label">
+                            <input type="checkbox" checked class="switch__input">
+                            <span class="switch__slider"></span>
+                        </label>
+                        <div class="switch__title">Сделать главной</div>
+                    </div>
+                </div>
+                <div class="photo-apartment__body">
+                    <div class="photo-apartment__image">
+                        <picture><source srcset="img/photo-flat.webp" type="image/webp"><picture><source srcset="img/photo-flat.webp" type="image/webp"><img src="img/photo-flat.jpg" alt="план" class="photo-apartment__img"></picture></picture>
+                        <button type="button" class="photo-apartment__close _icon-close1"></button>
+                    </div>
+                    <div class="photo-apartment__switch switch">
+                        <label class="switch__label">
+                            <input type="checkbox" checked class="switch__input">
+                            <span class="switch__slider"></span>
+                        </label>
+                        <div class="switch__title">Сделать главной</div>
+                    </div>
+                </div>
+              
+                
+            </div>
+        </div>
+        <div class="photo-apartment__content content-plan">
+            <h2 class="photo-apartment__title title-apartment">Планировка</h2>
+    
+            <div class="photo-apartment__images photo-apartment__images--plan">
+                <div class="photo-apartment__body ">
+                    <div class="photo-apartment__image">
+                        <picture><source srcset="img/plan.webp" type="image/webp"><picture><source srcset="img/plan.webp" type="image/webp"><img src="img/plan.jpg" alt="план" class="photo-apartment__img"></picture></picture>
+                        <button type="button" class="photo-apartment__close _icon-close1"></button>
+                    </div>
+                    <div class="photo-apartment__switch switch">
+                        <label class="switch__label">
+                            <input type="checkbox" checked class="switch__input">
+                            <span class="switch__slider"></span>
+                        </label>
+                        <div class="switch__title">Сделать главной</div>
+                    </div>
+                </div>
+                <div class="photo-apartment__body ">
+                    <div class="photo-apartment__image photo-apartment__image--plan">
+                        <picture><source srcset="img/plan2.webp" type="image/webp"><picture><source srcset="img/plan2.webp" type="image/webp"><img src="img/plan2.jpg" alt="план" class="photo-apartment__img"></picture></picture>
+                        <button type="button" class="photo-apartment__close _icon-close1"></button>
+                    </div>
+                    <div class="photo-apartment__switch switch">
+                        <label class="switch__label">
+                            <input type="checkbox" checked class="switch__input">
+                            <span class="switch__slider"></span>
+                        </label>
+                        <div class="switch__title">Сделать главной</div>
+                    </div>
+                </div>
+              
+                
+            </div>
+        </div>
+            <ul class="photo-apartment__list">
+                <li class="photo-apartment__item addPhoto active">
+                    <a href="#" class="photo-apartment__link ">Добавить фотографии</a>
+                </li>
+                <li class="photo-apartment__item addLayout">
+                    <a href="#" class="photo-apartment__link ">Добавить планировку</a>
+                </li>
+                <li class="photo-apartment__item addPanorama">
+                    <a href="#" class="photo-apartment__link ">Добавить панораму</a>
+                </li>
+            </ul>
+        </div>
+    <div class="apartment__adTitle adTitle-apartment">
+        <h2 class="adTitle-apartment__title title-apartment">Заголовок объявления</h2>
+        <div class="adTitle-apartment__body">
+            <input type="text" class="adTitle-apartment__input" placeholder="Заголовок">
+            <textarea name="objectDescription" class="adTitle-apartment__textarea" placeholder="Описание объекта"></textarea>
+        </div>
+    </div>
+    <div class="apartment__propertyValuation propertyValuation-apartment _icon-arrow1">
+        <h2 class="propertyValuation-apartment__title">Оценка недвижимости</h2>
+        <div class="propertyValuation-apartment__subtitle">Проверьте стоимость  недвижимости</div>
+    </div>
+    
+    <div class="apartment__deal deal-apartment">
+        <h2 class="deal-apartment__title title-apartment">Условия сделки</h2>
+        <div class="deal-apartment__body">
+            <input type="number" class="deal-apartment__input">
+            <label class="deal-apartment__label">Цена, ₽</label>
+        </div>
+        <div class="deal-apartment__switch switch">
+            <label class="switch__label">
+                <input type="checkbox" checked class="switch__input">
+                <span class="switch__slider"></span>
+            </label>
+            <div class="switch__title">Можно в ипотеку</div>
+        </div>
+        <div class="item-apartment-building__items accordion-apartment">
+            <div class="accordion-apartment__item">
+             
+                <select class="select-styled" placeholder="Тип сделки">
+                    <option value="">Тип сделки</option>
+                    <option>Свободная</option>
+                    <option>Альтернативная</option>
+                    
+                </select>
+            </div>
+            <div class="accordion-apartment__item">
+              
+                <select class="select-styled" placeholder="Бонус агенту">
+                    <option value="">Бонус агенту</option>
+                    <option>Фиксированная сумма</option>
+                    <option>Процент от сделки</option>
+                    
+                </select>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="apartment__contacts contacts-apartment">
+        <h2 class="contacts-apartment__title title-apartment">Контакты</h2>
+        <div class="contacts-apartment__body">
+            <div class="check-done _icon-check"></div>
+            <input type="tel" class="contacts-apartment__input" placeholder="+7 000 000 00 00"></input>
+        </div>
+        <a href="#" class="contacts-apartment__add _icon-plus1">Добавить еще один телефон</a>
+    </div>
+</div>
+
+<div class="apartment__buttons home-room">
+    <div class="apartment__buttons-content">
+    <button type="button" class="apartment__bt">Предпросмотр объявления</button>
+    <button type="button" class="apartment__bt">Сохранить шаблон</button>
+</div>
+    <button type="button" class="toPublish apartment__bt apartment__bt-blue">Опубликовать объявление</button>
+</div>
+</div>
+            
+            </div>
+        </div>
+            
+   
+    
+     
+     </section>
+
+    </main>
+  
+   
+    <footer class="footer footer-apartment">
+        <div class="footer__container">
+            <div class="footer__connection connection-footer">
+                <div class="connection-footer__body">
+                    <div class="connection-footer__logo _icon-logo"></div>
+                    <div class="connection-footer__contact contact-footer">
+                        <a href="tel:87876584455" class="contact-footer__tel">+7(787) 658-44-55</a>
+                        <a href="mailto:egrpsearch@gmail.com" class="contact-footer__mail">egrpsearch@gmail.com</a>
+                    </div>
+                </div>
+                <a href="" class="connection-footer__btn _icon-message">Обратная связь</a>
+               
+            </div>
+            <div class="footer__data data-footer">
+                <nav class="data-footer__nav nav-footer">
+                    <ul class="nav-footer__list">
+                        <li class="nav-footer__item">
+                            <a href="" class="nav-footer__link">Реклама сайта</a>
+                        </li>
+                        <li class="nav-footer__item">
+                            <a href="" class="nav-footer__link">Сотрудничество</a>
+                        </li>
+                        <li class="nav-footer__item">
+                            <a href="" class="nav-footer__link">Политика конфедициальности</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="data-footer__copy">© 2014-2022 ООО ЕГРП Недвижимость </div>
+                <div class="data-footer__body">
+                    <div class="data-footer__logo _icon-logotip"></div>
+                    <div class="data-footer__title">Проектирование и дизайн <span>Baturin.ru</span> © 2022</div>
+                </div>
+               
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/js/tom-select.complete.min.js"></script>
+    <script src="js/main.js"></script>
+    
+   
+
+</body>
+</html>
